@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = axios.create({ baseURL: 'https://team-task-manager-production-18da.up.railway.app/api' });
+const api = axios.create({ baseURL: 'http://localhost:5000/api' });
 
 api.interceptors.request.use(config => {
   const token = localStorage.getItem('token');
